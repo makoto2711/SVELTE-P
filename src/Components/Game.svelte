@@ -58,7 +58,7 @@ function action(i)
         {#each arr as item, i}
          <div class="col-6 col-md-4 col-lg-2 p-0">
           {#if show}
-              <img src="./img/0{item}.png" class="w-100 h-100" alt=""  />
+              <img src="./img/0{item}.png" loading="lazy" class="w-100 h-100" alt=""  />
           {:else}
             <button on:click={()=> {action(i)}} class="w-100 bg-light height fs-4">?</button>
           {/if}
